@@ -1,0 +1,230 @@
+
+.card-buttons-serie-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    gap: 5em;
+}
+.card-button-serie{
+    display: flex;
+    float: left;
+    gap: 0.5em;
+}
+.card-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.3px solid rgba(255, 255, 255, 0.574);
+    width: 2em;
+    height:2em;
+    background-color: #222222;
+    color: wheat;
+}
+.card-buttons:hover{
+    border: 0.3px solid rgba(255, 255, 255, 0.874);
+}
+.plus:hover .card-img-button-plus{
+    opacity: 1;
+}
+
+.card-add-list-display{
+    
+    float: left;
+    width: 5em;
+    height: 2em;
+    background-color: #e8e6e6;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.card-add-list-display{
+    position: absolute;
+    
+    float: left;
+    width: 7em;
+    height: 1.5em;
+    background-color: #e8e6e6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    transform: translate(0em, -2em);
+    border-radius: 3px;
+}
+.agregar-a-mi-lista{
+    display: none;
+}
+.plus:hover > .agregar-a-mi-lista {
+    display: block;
+}
+.card-add-list{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(0.3em);
+    font-size: 0.7em;
+    color: #141414;
+}
+.card-triangulo{
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #e8e6e6;
+    transform: translate(-3.2em, 0.8em) rotate(45deg);
+}
+
+.plus:hover .card-add-list-display, .plus:hover .card-triangulo, .plus:hover .card-add-list{
+    display: flex;
+}
+.card-play{
+    background-color: #ffffff;
+}
+.card-play:hover{
+    background-color: #e8e6e6;
+}
+.card-img-button-play{
+    width: 1.8em;
+    height: 1.8em;
+    transform: translateX(5%);
+}
+.card-img-button-plus{
+    width: 1.8em;
+    height: 1.8em;
+    filter: invert(1);
+    opacity: 0.7;
+}
+.card-img-button-like{
+    width: 1em;
+    height: 1em;
+    filter: invert(1);
+    opacity: 0.7;
+}
+
+.like:hover .card-img-button-like{
+    display: none;
+}
+
+.card-button-like-options{
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    float: left;
+    min-width: 6.5em;
+    height: 2.3em;
+    background-color: #232323;
+    border-radius: 20px;
+    z-index: 500;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+.like:hover .card-button-like-options{
+    display: flex;
+}
+.card-img-button-options{
+    width: 1em;
+    height: 1em;
+    filter: invert(1);
+}
+.dislike{
+    transform: scale(-1, -1) translateY(-0.1em);
+}
+.card-button-option-display-dislike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.574);
+    
+}
+.card-button-option-display-dislike:hover{
+    background-color: #363636;
+}
+.card-button-option-display-mega-like{
+    
+    
+    width: 1.7em;
+    height:1.7em;
+    background-color: #232323;
+    border-radius: 50%;
+}
+.mega-like-one-bg{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em; 
+    z-index: 510;
+    transform: translate(0.1em, 0.4em);
+}
+
+.mega-like-two{
+    position: absolute;
+    z-index: 505;
+    transform: translate(-0.3em, 0.2em);
+    width: 1em;
+    height: 1em;
+}
+.no-es-para-mi{
+    display: none;
+    transform: translate(-0.2em, -1.6em);
+}
+.card-button-option-display-dislike:hover .no-es-para-mi{
+    display: block;
+}
+.ct-no-es-para-mi{
+    transform: translate(3.5em,  0em) rotate(45deg);
+}
+.me-gusta{
+    display: none;
+    transform: translate(-0.2em, -1.6em);
+}
+.ct-me-gusta{
+    transform: translate(3.4em,  0em) rotate(45deg);
+}
+.card-button-option-display-like:hover .me-gusta{
+    display: block;
+}
+.me-encanta{
+    display: none;
+    transform: translate(-2.6em, -1.6em);
+    z-index: 1000;
+}
+.ct-me-encanta{
+    transform: translate(3.2em,  0em) rotate(45deg);
+}
+.card-button-option-display-mega-like:hover .me-encanta , .mega-like-one-bg:hover .me-encanta{
+    display: block;
+}
+.card-img-button-arrow{
+    width: 0.8em;
+    height: 0.8em;
+    filter: invert(1);
+    opacity: 0.7;
+    transform: translateY(10%);
+}
+.card-button-option-display-like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+}
+.card-button-option-display-like:hover{
+    background-color: #363636;
+}
+.card-button-option-display-mega-like:hover{
+    background-color: #363636;
+}
+.card-button-option-display-mega-like:hover .mega-like-one-bg{
+    background-color: #363636;
+} 

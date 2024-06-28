@@ -1,0 +1,17 @@
+<div class="carousel ">      
+    <div class="card-carrousel" *ngFor="let anime of this.animes">
+        <div class="card-img" style="background-image: url(../assets/img/animes/{{anime.img}});"></div>
+        <footer class="card-footer">
+            
+                <app-buttons></app-buttons>
+            
+            <div class="card-info-display">
+                <span class="card-valoracion">{{anime.recomendacion}}% para ti</span>
+                <div class="card-edad">{{anime.edad}}+</div>
+                <span class="card-episodios">{{anime.episodios}}</span>
+                <div class="card-calidad">{{anime.calidad}}</div>
+            </div>
+            <div class="card-categorias">{{anime.categorias}}</div>
+        </footer>
+    </div>
+</div>

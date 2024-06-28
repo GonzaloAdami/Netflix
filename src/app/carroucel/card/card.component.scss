@@ -1,0 +1,113 @@
+.carousel{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    gap: 0.3em;
+    width: 230vw;
+    min-height: 20em;
+    transform: translateX(56em); 
+    
+}
+@media screen and (max-width: 1200px) {
+    .carousel{
+        transform: translateX(60em);
+        width: 270vw;
+    }
+    
+}
+
+
+/*--------------------------------------- CARD CONFIG --------------------------------------*/
+.card-carrousel{
+    display: flex;
+    float: left;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    min-height: 8em;
+    height: auto;
+    width: 14em;
+    background-color: #181818;
+    border-radius: 3px;
+    gap: 0.5em;
+}
+.card-carrousel:hover{
+    transform: scale(1.4);
+    z-index: 2000 !important;
+
+
+}
+.card-carrousel:hover .card-img{
+    height: 6em;
+
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    display: none;
+  
+}
+.card-carrousel:hover .card-footer{
+    display: flex;
+   
+}
+.card-img{
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 8em;  
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+   
+}
+.card-info-display{
+    display: flex;
+    float: left;
+    gap: 0.4em;
+    padding: 0.5;
+    
+}
+.card-valoracion{
+    font-size: 0.6em;
+    font-weight: bold;
+    color: #46D369;
+    
+}
+.card-edad{
+    border: 0.3px solid rgb(255, 255, 255);
+    color: aliceblue;
+    padding:0 0.5em ;
+    font-size: 0.6em;
+    opacity: 0.8;
+    font-weight: 600;
+    
+}
+.card-episodios{
+    font-size: 0.6em;
+    font-weight: bold;
+    color: aliceblue;
+    opacity: 0.8;
+    
+}
+.card-calidad{
+    border: 0.3px solid rgb(255, 255, 255);
+    color: aliceblue;
+    padding:0 0.5em ;
+    font-size: 0.6em;
+    opacity: 0.8;
+    font-weight: bold;
+   
+}
+.card-categorias{
+    font-size: 0.5em;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+

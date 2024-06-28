@@ -1,0 +1,18 @@
+
+<header class="header-carrousel anime">
+    <div class="display-items-and-name-carrousel">
+      <span class="title-carrousel-display">Anime basado en manga</span>
+      <ul class="display-items">
+        <li class="items-carrousel" [ngClass]="{'actived': this.position === 1}"></li>
+        <li class="items-carrousel" [ngClass]="{'actived': this.position === 2}"></li>
+        <li class="items-carrousel" [ngClass]="{'actived': this.position === 3}"></li>
+        <li class="items-carrousel" [ngClass]="{'actived': this.position === 4}"></li>
+       
+      </ul>
+    </div>
+    <div class="carrousel-display" id="carousel-anime">
+      <app-card class="card"></app-card>
+    <button id="anime-prev" class="carousel-button prev"  (click)="this.prev()" *ngIf="this.position > 1">‹</button>
+    <button id="anime-next"  class="carousel-button next" (click)="this.next()">›</button>
+    </div>
+</header>

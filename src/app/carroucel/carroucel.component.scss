@@ -1,0 +1,157 @@
+/*-----------------------------------------------------------*/
+/*-------------------- CARROUSEL SERIE -------------------*/
+/*----------------------------------------------------------*/
+.display-items-and-name-carrousel{
+    display: flex;
+    float: left;
+    justify-content: start;
+    align-items: start;
+    gap: 67.5vw;
+    align-items: center;
+    transform: translateY(7.5em);
+}
+
+.display-items{
+    display: flex;
+    float: left;
+    gap: 0.3em;
+}
+.items-carrousel{
+    width: 1em;
+    height: 0.1em;
+    background-color: #424242;
+    list-style: none;
+}
+
+.list-carrousel-display{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+    height: auto;
+}
+
+
+.title-carrousel-display{
+    
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: 550;
+}
+.list-carrousel-display > *{
+    z-index: 10;
+}
+
+
+
+.carrousel-display{
+    display: flex;
+    float: left;
+    gap: 0.3em;
+    justify-content: center;
+    align-items: center;
+    min-height:25em;
+    width: 100%;
+    overflow-x: auto; 
+    
+}
+
+
+.shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8em;
+    transform: translateY(9.7em);
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none; /* Evita que el pseudo-elemento bloquee eventos */
+    z-index: 500;
+}
+
+.initialShadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8em;
+    transform: translateY(9.7em);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none; 
+    z-index: 500;
+}
+
+.carousel-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 500;
+    font-size: 6em;
+    max-height: 1.345em;
+    width: 0.6em;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(0em);
+    transition: opacity 0.3s ease;
+}
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.header-carrousel{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: auto;
+    max-width: 100vw;
+    transform: translateY(-30%);
+    
+    gap: 0em;
+}
+.hover-carrucel{
+    position: absolute;
+    display: flex;
+    float: left;
+    width: auto;
+    height: 8em;
+   
+   
+    padding-left: 93em;
+    gap: 0.3em;
+    
+}
+
+.anime:hover #anime-prev , .anime:hover #anime-next{
+    opacity: 1;
+}
+
+
+.carousel-button.next {
+    right: 10px; 
+    
+}
+.carousel-button.prev {
+    left: 0px;  
+}
+.carrousel-display::-webkit-scrollbar {
+    display: none;
+}
+.actived{
+    background-color: rgb(207, 207, 207) !important;
+}
+
+.card:hover{
+    z-index: 500;
+}
